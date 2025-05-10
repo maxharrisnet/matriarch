@@ -1,24 +1,23 @@
 @use '../global/variables' as *;
 
 body {
-	padding-top: $header-height;
 	container-type: inline-size;
-
-	@media (min-width: #{$container-lg}) {
-		padding-top: $header-height-lg;
-	}
 }
 
-header.main-header {
-	display: flex;
+header {
 	position: fixed;
-	background-color: $white;
-	box-shadow: $drop-shadow;
+	background-color: $color-white;
+	// box-shadow: $drop-shadow;
+	height: $header-height;
 	width: 100%;
 	z-index: 1000;
 	top: 0;
 	left: 0;
 	right: 0;
+
+	@container (min-width: #{$container-lg}) {
+		height: $header-height-lg;
+	}
 
 	.header-container {
 		display: flex;
@@ -28,7 +27,7 @@ header.main-header {
 		padding: 20px;
 
 		.logo {
-			height: 70px;
+			height: 4rem;
 			flex: 0 0 auto;
 			display: none;
 
@@ -41,8 +40,40 @@ header.main-header {
 			}
 		}
 
-		.header-title {
-			color: $primary-color;
+		nav {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			flex: 1 1 auto;
+
+			@container (min-width: #{$container-lg}) {
+				justify-content: flex-end;
+			}
+
+			.nav-links {
+				display: flex;
+				flex-direction: column;
+				gap: $spacing-lg;
+
+				@container (min-width: #{$container-lg}) {
+					flex-direction: row;
+					gap: $spacing-xl;
+				}
+
+				a {
+					color: $color-black;
+					font-family: $font-family-display;
+					font-size: $font-size-md;
+					font-weight: $font-weight-regular;
+					text-decoration: none;
+					text-transform: uppercase;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
 		}
 	}
 }
@@ -62,7 +93,7 @@ header.main-header {
 		display: block;
 		width: 100%;
 		height: 3px;
-		background-color: $secondary-color;
+		background-color: $color-secondary;
 		margin-bottom: 5px;
 		transition: transform 0.3s ease, opacity 0.3s ease;
 
@@ -98,7 +129,7 @@ header.main-header {
 	right: 0;
 	height: 100%;
 	width: 70%;
-	background-color: $white;
+	background-color: $color-white;
 	box-shadow: $drop-shadow;
 	z-index: 1000;
 	padding: $spacing-xxxl $spacing-lg;
@@ -114,13 +145,11 @@ header.main-header {
 			margin-bottom: $spacing-md;
 
 			a {
-				font-family: $font-heading;
+				font-family: $font-family-display;
 				font-size: $font-size-sm;
-				color: $secondary-color;
 				text-decoration: none;
 
 				&:hover {
-					color: $primary-color;
 				}
 			}
 		}

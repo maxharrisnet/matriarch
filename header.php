@@ -16,6 +16,7 @@ if (!defined('ABSPATH')) {
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <meta charset="<?php bloginfo('charset'); ?>">
+  
   <title><?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
 </head>

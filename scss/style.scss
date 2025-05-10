@@ -1,12 +1,6 @@
-/*
-Theme Name: Matriarch Dental Test
-Author: Max Harris
-Description: A minimal WordPress theme for the Dental Implants landing page.
-Version: 1.0
-*/
-
 @use 'global/_reset';
 @use 'global/_variables';
+@use 'global/_mixins';
 @use 'global/accessibility';
 @use 'global/_typography';
 
@@ -16,8 +10,6 @@ Version: 1.0
 
 @use 'components/_button';
 @use 'components/_hero';
-@use 'components/_cta';
-@use 'components/_faq';
-@use 'components/_map';
-
-@use '_admin';
+// @use 'components/_cta';
+// @use 'components/_faq';
+// @use 'components/_map';
