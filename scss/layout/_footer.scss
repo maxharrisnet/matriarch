@@ -19,9 +19,6 @@ footer.footer {
 	}
 
 	.container {
-		display: flex;
-		flex-direction: column;
-
 		@container (min-width: $container-lg) {
 			justify-content: space-between;
 		}

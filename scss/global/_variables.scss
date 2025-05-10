@@ -8,17 +8,24 @@ $breakpoint-lg: 992px; // Large Desktop
 $breakpoint-xl: 1200px; // Extra large Desktop
 
 // Colors
-$color-primary: #b31917; // Scarlet
-$color-primary-bright: #de1f1d; // Rooster Comb
-$color-primary-dark: #5e0d0c; // Redrum
-$color-secondary: #17b51aff; // Lime Green
-$color-secondary-light: #1cde1fff; // Electric Lime
-$color-secondary-dark: #0a510c; // Forest
+$color-turquoise: #40e0d0;
+$color-turquoise-light: #9fede3;
+$color-lavender: #5040e0;
+$color-lavender-light: #b0b8f9;
+$color-pink: #e040b0;
+$color-pink-light: #f8d0ec;
 $color-black: #0f0f0f; // Black Sheep
 $color-gray: #706f6e; // Dark Gray
-$color-white: #e1dfdc; // Ghosted
+$color-white: #fff; // White
 
-$background-color: #f7f9fa; // Light Gray
+$color-primary: $color-lavender; // Lavender
+$color-primary-bright: $color-lavender-light; // Lavender Mist
+$color-secondary: $color-turquoise; // Lime Green
+$color-secondary-light: $color-turquoise-light; // Turquoise Mist
+$color-tertiary: $color-pink; // Pink
+$color-tertiary-light: $color-pink-light; // Pink Lemonade
+
+$background-color: $color-white; // Light Gray
 $background-color-dark: #2d2d2d; // Dark Gray
 $border-color: rgba(135, 135, 135, 0.14); // Light Gray
 

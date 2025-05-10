@@ -1,0 +1,93 @@
+@use '../global/variables' as *;
+
+// Grid System
+.container {
+	width: 100%;
+	padding-right: $container-padding-sm;
+	padding-left: $container-padding-sm;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: $breakpoint-md) {
+		max-width: $container-md;
+	}
+
+	@media (min-width: $breakpoint-lg) {
+		max-width: $container-lg;
+	}
+
+	@media (min-width: $breakpoint-xl) {
+		max-width: $container-xl;
+	}
+}
+
+// Row
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -$container-padding-sm;
+	margin-left: -$container-padding-sm;
+}
+
+// Basic column
+.col {
+	position: relative;
+	width: 100%;
+	padding-right: $container-padding-sm;
+	padding-left: $container-padding-sm;
+}
+
+// One column (default mobile)
+.col-1 {
+	@extend .col;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+// Two columns
+.col-2 {
+	@extend .col;
+	flex: 0 0 100%;
+	max-width: 100%;
+
+	@media (min-width: $breakpoint-md) {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+// Three columns
+.col-3 {
+	@extend .col;
+	flex: 0 0 100%;
+	max-width: 100%;
+
+	@media (min-width: $breakpoint-md) {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+}
+
+// Column gap utilities
+.gap-sm {
+	gap: $spacing-base;
+}
+
+.gap-md {
+	gap: $spacing-xl;
+}
+
+.gap-lg {
+	gap: $spacing-xxl;
+}
+
+// Equal height columns
+.row-eq-height {
+	display: flex;
+	flex-wrap: wrap;
+
+	> [class*='col'] {
+		display: flex;
+		flex-direction: column;
+	}
+}
