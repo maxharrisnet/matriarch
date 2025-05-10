@@ -1,0 +1,58 @@
+.explainer-section {
+	padding: 60px 0;
+	background-color: #000;
+	color: #fff;
+}
+
+.explainer-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	gap: 30px;
+}
+
+.explainer-image-wrapper {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.explainer-image {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.explainer-content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.explainer-title {
+	font-size: 32px;
+	color: #3a86ff;
+	margin-bottom: 20px;
+}
+
+.explainer-description p {
+	font-size: 16px;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.explainer-container {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.explainer-image-wrapper {
+		max-width: 45%;
+	}
+}

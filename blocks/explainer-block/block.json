@@ -1,0 +1,53 @@
+{
+  "apiVersion": 2,
+  "name": "explainer-block",
+  "title": "Explainer Section",
+  "category": "design",
+  "icon": "info-outline",
+  "description": "Display a dental procedure explanation with image and text",
+  "keywords": [
+    "explainer",
+    "dental",
+    "procedure",
+    "information"
+  ],
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "What Are Dental Implants?"
+    },
+    "description": {
+      "type": "string",
+      "default": "An implant is a small metal screw that replaces an entire tooth. In a brief surgical procedure, the dentist inserts an implant into the bone beneath your gums right in the spot where a tooth should be. The implant acts like a natural tooth root and is finished off with a restoration such as a dental crown to help it look and feel just like a real tooth."
+    },
+    "secondParagraph": {
+      "type": "string",
+      "default": "Getting dental implants is a big deal. You think you might like an implant, but you aren't sure what to expect. We explain everything here so that you can make an informed decision about your dental treatment."
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": "Dental procedure explained"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#3a86ff"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css"
+}

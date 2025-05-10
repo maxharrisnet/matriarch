@@ -1,0 +1,16 @@
+{
+  "name": "matriarch",
+  "version": "1.0.0",
+  "description": "The for JB The First Lady's website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss:style.css"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^7.0.1"
+  },
+  "author": "Max Harris",
+  "license": "ISC"
+}
